@@ -11,6 +11,5 @@ export default async function handler(req, res) {
   // User is authenticated, return their data
   res.status(200).json({
     user: session.user,
-    message: "This is protected data!",
   });
 }
